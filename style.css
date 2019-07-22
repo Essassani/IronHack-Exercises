@@ -29,7 +29,7 @@
       text-transform: uppercase;
       line-height: 4em;
       color: white;
-      text-shadow: #020819 8px -20px 9px;
+      text-shadow: #020819 6px -2px 6px;
   }
 
   h3 {
@@ -149,7 +149,7 @@
   }
 
   hr {
-      margin: 20px auto 30px auto;
+      margin: 20px auto 30px;
       width: 40%;
   }
 
@@ -198,4 +198,45 @@
         height: 375px;
         float: left;
         width: 60%;
+    }
+
+    .schedule-table {
+        margin: 0 auto 40px auto;
+        font-size: 1.5em;
+        
+    }
+
+    .schedule-table th, .schedule-table td {
+        border-bottom: 1px black solid;
+        padding: 5px 10px;
+    }
+
+    
+
+    .slot-form-container {
+        width: 40%;
+        margin: 18px auto 0 auto;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .slot-form-container label {
+        display: block;
+        margin-bottom: 5px;
+        line-height: 15px;
+    }
+
+    .slot-form-container input, .slot-form-container select {
+        height: 20px;
+        outline: none;
+        padding: 3px;
+        width: 100%;
+    }
+
+    .slot-form-container button {
+        border: 1px black solid;
+        color: black;
+        background-color: white;
+        padding: 9px;
+        margin-top: 15px;
     }

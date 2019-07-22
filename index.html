@@ -72,11 +72,11 @@
             <hr>
             <article class="col col-3">
                 <b class="member-name">Harold Rothstein</b>
-                <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/team-1.jpg" alt="Photo of Harold Rothstein" height="250"> 
+                <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/team-1.jpg" alt="Photo of Harold Rothstein" height="250" width="100%"> 
             </article>
             <article class="col col-3 col-middle">
                 <b class="member-name">Susan Phillips</b>
-                <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/team-2.jpg" alt="Photo of Susan Phillips" height="250">
+                <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/team-2.jpg" alt="Photo of Susan Phillips" height="250" width="100%">
             </article>
             <article class="col col-3">
                 <b class="member-name">Taylor Roberts</b>
@@ -87,7 +87,73 @@
 </section> 
 <section id="schedule" class="container">
     <h3>Schedule</h3>
+        <table class="schedule-table" cellpadding="0" cellspacing="0">
+            <thead>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>12:00 - 14:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>15:00 - 17:00</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+            </tbody>
+        </table>
     <h3>Schedule a Time Slot</h3>
+    <form class="slot-form" action="/register">
+        <div class="slot-form-container">
+            <label for="e-mail">Email</label>
+            <input type="email" name="e-mail" placeholder="Enter your email">
+        </div>
+        <div class="slot-form-container">
+            <label for="participants">Participants</label>
+            <input type="number" name="participants" placeholder="Number of participants">
+        </div>
+        <div class="slot-form-container">
+            <label for="date">Date</label>
+            <input type="date" name="date">
+        </div>
+        <div class="slot-form-container">
+            <label for="time">Time</label>
+            <select name="time">
+                <option value="early">9:00 - 11:00</option>
+                <option value="mid">12:00 - 14:00</option>
+                <option value="late">15:00 - 17:00</option>
+            </select>
+        </div>
+        <div class="slot-form-container">
+            <button type="submit">Reserve Your Slot!</button>
+        </div>
+
+    </form>
 </section>
 <footer class="dark-background footer">
     <div class="container">
